@@ -3,6 +3,8 @@ import time
 import infraestructura
 import os
 
+os.system('cat ASCII.txt')
+
 image = 'httpd'
 binding = {80: 8080}
 

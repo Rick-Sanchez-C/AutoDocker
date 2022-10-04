@@ -18,6 +18,10 @@ def listcontainers():
         print(container.id)
 
 
+def getcontainers():
+    return client.containers.list()
+
+
 def stopall():
     for container in client.containers.list():
         container.stop()
@@ -31,6 +35,10 @@ def printlogs(container_id):
 def listimages():
     for image in client.images.list():
         print(image.id)
+
+
+def getimages():
+    return client.images.list()
 
 
 def pullimage(imagename):
